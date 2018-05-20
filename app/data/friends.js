@@ -170,3 +170,5 @@ var friendsArr = [
     "dog": true
   }
 ];
+
+module.exports = friendsArr;
