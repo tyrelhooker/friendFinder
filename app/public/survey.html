@@ -41,8 +41,8 @@
 
         <h4>Question 1</h4>
         <h5>I want a friend that will go on long runs with me.</h5>
-        <select class="chosen-select" id=”q1”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q1">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -53,8 +53,8 @@
         
         <h4>Question 2</h4>
         <h5>I want a friend that is a free thinker.</h5>
-        <select class="chosen-select" id=”q2”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q2">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -65,8 +65,8 @@
         
         <h4>Question 3</h4>
         <h5>I want a friend with an outsized personality.</h5>
-        <select class="chosen-select" id=”q3”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q3">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -77,8 +77,8 @@
         
         <h4>Question 4</h4>
         <h5>I want a friend that will watch the whole Game of Thrones series with me in week.</h5>
-        <select class="chosen-select" id=”q4”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q4">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -89,8 +89,8 @@
         
         <h4>Question 5</h4>
         <h5>I want a friend that will sprint with me.</h5>
-        <select class="chosen-select" id=”q5”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q5">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -101,8 +101,8 @@
         
         <h4>Question 6</h4>
         <h5>I want a friend that will protect me.</h5>
-        <select class="chosen-select" id=”q6”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q6">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -113,8 +113,8 @@
         
         <h4>Question 7</h4>
         <h5>I want a friend that is good with kids.</h5>
-        <select class="chosen-select" id=”q7”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q7">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -125,8 +125,8 @@
         
         <h4>Question 8</h4>
         <h5>I want a friend that is accepting of my other friends.</h5>
-        <select class="chosen-select" id=”q8”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q8">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -137,8 +137,8 @@
         
         <h4>Question 9</h4>
         <h5>I want a friend that gives me space.</h5>
-        <select class="chosen-select" id=”q9”>
-          <option selected value="0">Open this select menu</option>
+        <select class="chosen-select" id="q9">
+          <option value="0">Open this select menu</option>
           <option value="1">1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -149,9 +149,9 @@
         
         <h4>Question 10</h4>
         <h5>I want a friend to intellectually challenge me.</h5>
-        <select class="chosen-select" id=”q10”>
-          <option selected value="0">Open this select menu</option>
-          <option value="1">1 (Strongly Disagree</option>
+        <select class="chosen-select" id="q10">
+          <option value="0">Open this select menu</option>
+          <option value=1>1 (Strongly Disagree</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
@@ -162,7 +162,7 @@
         <button type="submit" class="btn btn-primary" id="submitSurvey">Submit</button>
       </div>
     </div>
-    <br>
+    <br> 
     <hr>
     <footer class="footer">
       <div class="container">
@@ -172,42 +172,46 @@
   </div>
 
   <script type="text/javascript">
-    $(".submitSurvey").on("click", function(event) {
+    $("#submitSurvey").on("click", function(event) {
       event.preventDefault();
       
-      var newUser = {
-        name: $("#userName").val().trim(""),
-        photo: $("#userPhoto").val().trim(),
+      var newHuman = {
+        name: $("#userName").val(),
+        photo: $("#userPhoto").val(),
         scores: [
-          $("q1").val(),
-          $("q2").val(),
-          $("q3").val(),
-          $("q4").val(),
-          $("q5").val(),
-          $("q6").val(),
-          $("q7").val(),
-          $("q8").val(),
-          $("q9").val(),
-          $("q10").val()
-        ]
+          $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val()
+        ],
+        dog: false
       };
-      $.post("/api/friends", newUser, function(data) {
+
+      console.log(newHuman);
+
+      $.post("/api/friends", newHuman, function(data) {
         if (data) {
           console.log("newUser info submitted")
         }
         
-        $("#userName").val("");
-        $("userPhoto").val("");
-        $("q1").val("0");
-        $("q2").val("0");
-        $("q3").val("0");
-        $("q4").val("0");
-        $("q5").val("0");
-        $("q6").val("0");
-        $("q7").val("0");
-        $("q8").val("0");
-        $("q9").val("0");
-        $("q10").val("0");
+        // $("#userName").val("");
+        // $("userPhoto").val("");
+        // $("#q1").val("0");
+        // $("#q2").val("0");
+        // $("#q3").val("0");
+        // $("#q4").val("0");
+        // $("#q5").val("0");
+        // $("#q6").val("0");
+        // $("#q7").val("0");
+        // $("#q8").val("0");
+        // $("#q9").val("0");
+        // $("#q10").val("0");
       });
     });
   
