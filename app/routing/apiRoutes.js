@@ -12,7 +12,7 @@ module.exports = function (app) {
     var newHuman = req.body;
     var humanScores = newHuman.scores;
     var totalDiffArr = []
-    var lowest = 50;
+    var lowest = 51;
     var matchName;
     var matchPhoto;
 
@@ -22,48 +22,24 @@ module.exports = function (app) {
         totalDiff += Math.abs(Number(friendsData[i].scores[j]) - Number(humanScores[j]));
         // totalDiff = totalDiff + diffCounter;
       }
-      totalDiffArr.push(totalDiff);
-      // console.log("diffCalc: " + diffCounter)
-    }
-    console.log("totalDiffArr: " + totalDiffArr);
+      console.log(totalDiff);
 
-
-    for (var k = 0; k < totalDiffArr.length; k++) {
-      if (totalDiffArr[k] < lowest) {
-        lowest = k;
+      if (totalDiff < lowest) {
+        lowest = totalDiff;
+        matchName = friendsData[i].name;
+        matchPhoto = friendsData[i].photo;
+        console.log(matchName);
+        console.log(matchPhoto);
       }
     }
-    console.log(lowest);
-    matchName = friendsData[lowest].name;
-    matchPhoto = friendsData[lowest].photo;
 
-    console.log(matchName);
+    var match = {
+      name: matchName,
+      photo: matchPhoto
+    }
+    console.log(match);
+    res.json(match);
 
-
-
-
-
-
-
-
-
-
-
-
-    // for (var i = 0; i < humanScores.length; i++) {
-    //   console.log(friendsData.scores[i] - humanScores[i])
-    //   // humanScoresArr.push(humanScores[i]);
-    // }
-
-    // console.log("humanScoresArr: " + humanScoresArr);
-    
-
-
-    // for (var i = 0; i < friendsData.length; i++) {
-    //   dog[i].push(friendsData[i].scores);
-    // }
-
-    // console.log("Dog7 arr: " + dog7);
 
 
   });
