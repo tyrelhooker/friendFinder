@@ -14,7 +14,7 @@ var friendsArr = [
       "1",
       "3"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Boxer",
@@ -31,7 +31,7 @@ var friendsArr = [
       "1",
       "4"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Blue Heeler",
@@ -48,7 +48,7 @@ var friendsArr = [
       "4",
       "5"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Cavalier King Charles Spaniel",
@@ -65,7 +65,7 @@ var friendsArr = [
       "1",
       "4"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Great Dane",
@@ -82,7 +82,7 @@ var friendsArr = [
       "1",
       "3"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "English Bulldog",
@@ -99,7 +99,7 @@ var friendsArr = [
       "3",
       "2"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Springer Spaniel",
@@ -116,7 +116,7 @@ var friendsArr = [
       "1",
       "5"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Weimaraner",
@@ -133,7 +133,7 @@ var friendsArr = [
       "1",
       "5"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "Labrador Retriever",
@@ -150,7 +150,7 @@ var friendsArr = [
       "2",
       "5"
     ],
-    "dog": true
+    "dog": "true"
   },
   {
     "name": "French Bulldog",
@@ -167,7 +167,7 @@ var friendsArr = [
       "1",
       "3"
     ],
-    "dog": true
+    "dog": "true"
   }
 ];
 
